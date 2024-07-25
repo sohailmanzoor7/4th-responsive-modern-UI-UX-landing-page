@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+#left{
+  position: relative;
+  width: 40%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+#lnav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+#arrow-icon{
+  height: 20px;
+  cursor: pointer;
+}
+#lnav a{
+  margin-right: 20px;
+}
+#twitter-icon{
+  height: 20px;
+}
+#lnavr{
+  display: flex;
+  align-items: center;
+}
+#lnavr a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#right{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+#right-top{
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+#right-bottom{
+  width: 100%;
+  height: 50%;
+  border: 1px solid #fff;
+  background-image: url(julia-zolotova-M_xIaxQE3Ms-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#right-top-right{
+  width: 55%;
+  height: 100%;
+  border: 1px solid #fff;
+  background-image: url(annie-spratt-fbAnIjhrOL4-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #efe0e3;
+  background-position: center;
+}
+#right-top-left{
+  width: 45%;
+  height: 100%;
+  border: 3px solid #fff;
+  background-image: url(mae-mu-s6S8IgEN6-4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#text-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#text-center h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+#text-center p{
+  opacity: .6;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 20px;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  color: rgb(49, 46, 46);
+}
+#text-center a{
+  text-decoration: none;
+  color: rgb(49, 46, 46);
+  border-bottom: 1px solid rgb(49, 46, 46);
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 500px){
+  #main{
+    flex-direction: column;
+    width: 100%;
+  }
+  #main #left{
+    width: 100%;
+  }
+  #main #right{
+    width: 100%;
+  }
+  #main #text-center{
+    width: 100%;
+  }
+  #main #text-center h1{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  #main #text-center p{
+    margin-left: 60px;
+    margin-right: 40px;
+  }
+  #main #text-center a{
+    margin-left: 61px;
+  }
+}
